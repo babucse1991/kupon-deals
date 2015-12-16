@@ -1,4 +1,5 @@
-<div class="slider">
+
+<div class="slider" >
         <div class="container">
           <div class="row">
             <div id="grid-slider" class="flexslider">
@@ -237,96 +238,7 @@
         <!--/.frame -->
         <div class="row">
           <div class="col-sm-8">
-            <div class="row">
-              <div class="col-sm-12 clearfix">
-                <div class="hr-link">
-                  <hr class="mBtm-50 mTop-30" data-symbol="FEATURED DEALS">
-                  <div class="view-all">
-                    <a href="#/home">
-                      VIEW ALL
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6" ng-repeat="feautDeal in featureDealList">
-                <div class="deal-entry green">
-                  <div class="offer-discount" ng-bind="feautDeal.offerDiscount">
-                    
-                  </div>
-                  <div class="image ripple-effect">
-                    <a href="#" target="_blank" title="#">
-                        <img src="{{feautDeal.image}}" alt="#" class="img-responsive">
-                    </a>
-                    <span class="bought">
-                      <i class="ti-tag">
-                      </i>
-                      {{feautDeal.bought}}
-                    </span>
-                  </div>
-                  <!-- /.image -->
-                  <div class="title">
-                    <a href="#" target="_blank" title="ATLETIKA 3 menesu abonements">
-                      {{feautDeal.header}}
-                    </a>
-                  </div>
-                  <div class="entry-content">
-                    <div class="prices clearfix">
-                      <div class="procent" ng-bind="feautDeal.procent">
-                        
-                      </div>
-                      <div class="price">
-                        <i class="ti-money">
-                        </i>
-                        
-                        <b ng-bind="feautDeal.price">
-                          
-                        </b>
-                      </div>
-                      <div class="old-price">
-                        <span>
-                          <i class="ti-money">
-                          </i>
-                          {{feautDeal.oldPrice}}
-                        </span>
-                      </div>
-                    </div>
-                    <p ng-bind="feautDeal.desc">
-                      
-                    </p>
-                  </div>
-                  <!--/.entry content -->
-                  <footer class="info_bar clearfix">
-                    <ul class="unstyled list-inline row">
-                      <li class="time col-sm-7 col-xs-6 col-lg-8">
-                        <i class="ti-timer">
-                        </i>
-                        <b ng-bind="feautDeal.dealTimerDd">
-                          
-                        </b>
-                        d.
-                        <b ng-bind="feautDeal.dealTimerTm">
-                          
-                        </b>
-                        st.
-                        <b ng-bind="feautDeal.dealTimerMin">
-                          
-                        </b>
-                        min.
-                      </li>
-                      <li class="info_link col-sm-5 col-xs-6 col-lg-4">
-                        <a href="#" class="btn btn-block btn-default btn-raised btn-sm">
-                          View Deal
-                        </a>
-                      </li>
-                    </ul>
-                  </footer>
-                </div>
-              </div>
 
-
-            </div>
             <!--/row -->
             <div class="row">
               <div class="col-sm-12 clearfix">
@@ -411,90 +323,6 @@
 
             </div>
             <!--/.row -->
-            <div class="row">
-              <div class="col-sm-12 clearfix">
-                <hr class="hr-grid-space" data-symbol="LAST MINUTE DEALS">
-              </div>
-            </div>
-            <div class="row">
-              
-              <div class="col-sm-6" ng-repeat="popularDeal in popularDealList">
-                <div class="deal-entry  blue">
-                  <div class="offer-discount" ng-bind="popularDeal.offerDiscount">
-                    
-                  </div>
-                  <div class="image">
-                    <a href="#" target="_blank" title="#">
-                        <img src="{{popularDeal.image}}" alt="#" class="img-responsive">
-                    </a>
-                    <span class="bought">
-                      <i class="ti-tag">
-                      </i>
-                      {{popularDeal.bought}}
-                    </span>
-                  </div>
-                  <!-- /.image -->
-                  <div class="title">
-                    <a href="#" target="_blank" title="ATLETIKA 3 menesu abonements">
-                      {{popularDeal.header}}
-                    </a>
-                  </div>
-                  <div class="entry-content">
-                    <div class="prices clearfix">
-                      <div class="procent" ng-bind="popularDeal.procent">
-                        
-                      </div>
-                      <div class="price">
-                        <i class="ti-money">
-                        </i>
-                        
-                        <b ng-bind="popularDeal.price">
-                          
-                        </b>
-                      </div>
-                      <div class="old-price">
-                        <span>
-                          <i class="ti-money">
-                          </i>
-                          {{popularDeal.oldPrice}}
-                        </span>
-                      </div>
-                    </div>
-                    <p ng-bind="popularDeal.desc">
-                      
-                    </p>
-                  </div>
-                  <!--/.entry content -->
-                  <footer class="info_bar clearfix">
-                    <ul class="unstyled list-inline row">
-                      <li class="time col-sm-7 col-xs-6 col-lg-8">
-                        <i class="ti-timer">
-                        </i>
-                        <b ng-bind="popularDeal.dealTimerDd">
-                          
-                        </b>
-                        d.
-                        <b ng-bind="popularDeal.dealTimerTm">
-                          
-                        </b>
-                        st.
-                        <b ng-bind="popularDeal.dealTimerMin">
-                          
-                        </b>
-                        min.
-                      </li>
-                      <li class="info_link col-sm-5 col-xs-6 col-lg-4">
-                        <a href="#" class="btn btn-block btn-default btn-raised btn-sm">
-                          View Deal
-                        </a>
-                      </li>
-                    </ul>
-                  </footer>
-                </div>
-              </div>
-              
-            </div>
-            <!--/row -->
             
           </div>
           <!-- /col 8 -->
@@ -843,25 +671,7 @@
                 </div>
                 <!-- /.row -->
               </div>
-              <!--/.widget -->
-              <div class="widget">
-                <div class="box-icon">
-                  <div class="icon-wrap">
-                    <i class="ti-star">
-                    </i>
-                  </div>
-                  <div class="text">
-                    <h4>
-                      share & get $5 in Deals 
-                    </h4>
-                    
-                    <p>
-                      earn $5 in Bosnus Deal when a friend buys this Deal from your personalised link full terms apply
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!--/.widget -->
+             
             </div>
             <!-- /col 4 - sidebar -->
           </div>

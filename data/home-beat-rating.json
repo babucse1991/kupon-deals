@@ -1,0 +1,30 @@
+[
+	{
+		"dealName"	:	"Sirenis Punta Cana Resort Casino ",
+		"dealImage"	:	"http://placehold.it/200x150",
+		"dealReating":	4,
+		"priceOlder"	:	"$399.00",
+		"priceNew"	:	"$99.00"
+	},
+		{
+		"dealName"	:	"Plaza Resort Hotel & SPA ",
+		"dealImage"	:	"http://placehold.it/200x150",
+		"dealReating":	2,
+		"priceOlder"	:	"$99.00",
+		"priceNew"	:	"$86.00"
+	},
+		{
+		"dealName"	:	"Wyndham Garden at Palmas del Mar ",
+		"dealImage"	:	"http://placehold.it/200x150",
+		"dealReating":	1,
+		"priceOlder"	:	"$700.00",
+		"priceNew"	:	"$199.00"
+	},
+		{
+		"dealName"	:	"Sirenis Punta Cana Resort Casino ",
+		"dealImage"	:	"http://placehold.it/200x150",
+		"dealReating":	5,
+		"priceOlder"	:	"$399.00",
+		"priceNew"	:	"$99.00"
+	}
+]

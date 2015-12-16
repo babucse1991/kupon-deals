@@ -1,0 +1,223 @@
+<section id="page" class="container">
+        
+        <div class="row">
+          
+          <div class="col-sm-8">
+            <div class="inner-side shadow">
+              
+              <h3 class="section-title">
+                Frequently Asked Questions
+              </h3>
+              
+              <p>
+                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.
+              </p>
+              <div class="divide30">
+              </div>
+              
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default" ng-repeat="frqAskedQatn in frqAskedQatnList">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      
+                      <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" 
+                      ng-click="collapseTwo = collapseTwo ? false : true" style="cursor: pointer;" ng-bind="frqAskedQatn.question">
+                         
+                      </a>
+                      
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse" ng-class="{in : collapseTwo, collapse : !collapseTwo }" style="height: auto;">
+                    <div class="panel-body" ng-bind="frqAskedQatn.answer">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- /inner -->
+            
+          </div>
+          <!-- /.col-sm-8 .content -->
+          <div class="col-sm-4 sidebar">
+            <div class="inner-side shadow">
+              
+              <div class="widget widget-subscribe">
+                <hr data-symbol="SUBSCRIBE">
+                <div class="newsletter">
+                  <h4>
+                    Get Updates 
+                    <span class="color-orange">
+                      (it’s free)
+                    </span>
+                  </h4>
+                  <p>
+                    Subscribe to our newsletter for good deals, sent out every month.
+                  </p>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="input-group-btn">
+                      <button class="btn btn-danger btn-raised ripple-effect" type="button">
+                        Subscribe
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="widget widget-menu">
+                <hr data-symbol="CATEGORIES">
+                <!-- Sidebar navigation -->
+                <ul class="nav sidebar-nav">
+                  <li class="dropdown open">
+                    <a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">
+                      <i class="ti-shine">
+                      </i>
+                      Travel
+                      <span class="sidebar-badge">
+                        12
+                      </span>
+                      <b class="caret">
+                      </b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#" tabindex="-1">
+                          Europe
+                          <span class="sidebar-badge">
+                            12
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" tabindex="-1">
+                          Promo
+                          <span class="sidebar-badge">
+                            0
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-gift">
+                      </i>
+                      Gifts
+                      <span class="sidebar-badge">
+                        3
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-shopping-cart">
+                      </i>
+                      Products
+                      <span class="sidebar-badge">
+                        456
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-ticket">
+                      </i>
+                      Tickets
+                      <span class="sidebar-badge badge-circle">
+                        12
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-pulse">
+                      </i>
+                      Health
+                      <span class="sidebar-badge badge-circle">
+                        45
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-direction-alt">
+                      </i>
+                      Things To Do
+                      <span class="sidebar-badge badge-circle">
+                        117
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-cut">
+                      </i>
+                      Fashion
+                      <span class="sidebar-badge badge-circle">
+                        117
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+                <!-- Sidebar divider -->
+                
+              </div>
+              <div class="widget widget-tags">
+                <hr class="mBtm-50 mTop-30" data-symbol="POPULAR TAGS">
+                <ul class="tags">
+                  <li>
+                    <a href="#" class="tag">
+                      Vacation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="tag">
+                      Travel
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="tag">
+                      Discount
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="tag">
+                      Croatia
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="tag">
+                      Adriatic
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="tag">
+                      Europe
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="tag">
+                      Monte Negro
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="tag">
+                      New York
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="tag">
+                      Paris
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /widget -->
+              
+              
+            </div>
+            <!-- /col 4 - sidebar -->
+          </div>
+        </div>
+      </section>

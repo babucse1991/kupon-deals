@@ -1,0 +1,33 @@
+[
+	{
+		"offerDiscount"	:	"$347",
+		"tiTag"	:	21,
+		"dealImage"	:	"http://placehold.it/700x400",
+		"dealName"	:	"Plaza Resort Hotel &amp; SPA",
+		"rating"	:	"3",
+		"value"		:	"$422",
+		"discount"	:	"64%",
+		"saving"	:	"$76"
+	},
+		{
+		"offerDiscount"	:	"$347",
+		"tiTag"	:	21,
+		"dealImage"	:	"http://placehold.it/700x400",
+		"dealName"	:	"Plaza Resort Hotel &amp; SPA One",
+		"rating"	:	"1",
+		"value"		:	"$1,422",
+		"discount"	:	"64%",
+		"saving"	:	"$976"
+	},
+		{
+		"offerDiscount"	:	"$347",
+		"tiTag"	:	21,
+		"dealImage"	:	"http://placehold.it/700x400",
+		"dealName"	:	"Plaza Resort Hotel &amp; SPA Two",
+		"rating"	:	"4",
+		"value"		:	"$487",
+		"discount"	:	"64%",
+		"saving"	:	"$86"
+	}
+	
+]
