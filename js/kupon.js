@@ -19,6 +19,15 @@
 
 $(window).load(function() {
     "use strict";
+
+    readyCall();
+
+});
+
+
+function readyCall() {
+	
+	
     // Grid slider,used on index_2.html
     $('#grid-slider').flexslider({
     
@@ -63,9 +72,8 @@ $(window).load(function() {
             size: 80
              
         });
+}
 
-
-});
 
 
 // Seetings for loader
