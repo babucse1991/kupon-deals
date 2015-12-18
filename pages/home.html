@@ -252,35 +252,35 @@
             <div class="row">
               <div class="col-sm-6" ng-repeat="feautDeal in featureDealList">
                 <div class="deal-entry green">
-                  <div class="offer-discount" ng-bind="feautDeal.offerDiscount">
+                  <div class="offer-discount" ng-bind="feautDeal.dealDiscount">
                     
                   </div>
                   <div class="image ripple-effect">
                     <a href="#" target="_blank" title="#">
-                        <img src="{{feautDeal.image}}" alt="#" class="img-responsive">
+                        <img src="{{feautDeal.dealImage}}" alt="#" class="img-responsive">
                     </a>
                     <span class="bought">
                       <i class="ti-tag">
                       </i>
-                      {{feautDeal.bought}}
+                      {{feautDeal.dealBought}}
                     </span>
                   </div>
                   <!-- /.image -->
                   <div class="title">
                     <a href="#" target="_blank" title="ATLETIKA 3 menesu abonements">
-                      {{feautDeal.header}}
+                      {{feautDeal.dealContent}}
                     </a>
                   </div>
                   <div class="entry-content">
                     <div class="prices clearfix">
-                      <div class="procent" ng-bind="feautDeal.procent">
+                      <div class="procent" ng-bind="feautDeal.dealDiscount">
                         
                       </div>
                       <div class="price">
                         <i class="ti-money">
                         </i>
                         
-                        <b ng-bind="feautDeal.price">
+                        <b ng-bind="feautDeal.dealPrice">
                           
                         </b>
                       </div>
@@ -288,11 +288,11 @@
                         <span>
                           <i class="ti-money">
                           </i>
-                          {{feautDeal.oldPrice}}
+                          {{feautDeal.dealValue}}
                         </span>
                       </div>
                     </div>
-                    <p ng-bind="feautDeal.desc">
+                    <p ng-bind="feautDeal.dealShortEntry">
                       
                     </p>
                   </div>
@@ -336,35 +336,35 @@
             <div class="row">
               <div class="col-sm-6" ng-repeat="popularDeal in popularDealList">
                 <div class="deal-entry  orange">
-                  <div class="offer-discount" ng-bind="popularDeal.offerDiscount">
+                  <div class="offer-discount" ng-bind="popularDeal.dealDiscount">
                     
                   </div>
                   <div class="image">
                     <a href="#" target="_blank" title="#">
-                        <img src="{{popularDeal.image}}" alt="#" class="img-responsive">
+                        <img src="{{popularDeal.dealImage}}" alt="#" class="img-responsive">
                     </a>
                     <span class="bought">
                       <i class="ti-tag">
                       </i>
-                      {{popularDeal.bought}}
+                      {{popularDeal.dealBought}}
                     </span>
                   </div>
                   <!-- /.image -->
                   <div class="title">
                     <a href="#" target="_blank" title="ATLETIKA 3 menesu abonements">
-                      {{popularDeal.header}}
+                      {{popularDeal.dealContent}}
                     </a>
                   </div>
                   <div class="entry-content">
                     <div class="prices clearfix">
-                      <div class="procent" ng-bind="popularDeal.procent">
+                      <div class="procent" ng-bind="popularDeal.dealDiscount">
                         
                       </div>
                       <div class="price">
                         <i class="ti-money">
                         </i>
                         
-                        <b ng-bind="popularDeal.price">
+                        <b ng-bind="popularDeal.dealPrice">
                           
                         </b>
                       </div>
@@ -372,11 +372,11 @@
                         <span>
                           <i class="ti-money">
                           </i>
-                          {{popularDeal.oldPrice}}
+                          {{popularDeal.dealValue}}
                         </span>
                       </div>
                     </div>
-                    <p ng-bind="popularDeal.desc">
+                    <p ng-bind="popularDeal.dealShortEntry">
                       
                     </p>
                   </div>
@@ -418,37 +418,37 @@
             </div>
             <div class="row">
               
-              <div class="col-sm-6" ng-repeat="popularDeal in popularDealList">
+              <div class="col-sm-6" ng-repeat="popularDeal in lastMinutDealList">
                 <div class="deal-entry  blue">
-                  <div class="offer-discount" ng-bind="popularDeal.offerDiscount">
+                  <div class="offer-discount" ng-bind="popularDeal.dealDiscount">
                     
                   </div>
                   <div class="image">
                     <a href="#" target="_blank" title="#">
-                        <img src="{{popularDeal.image}}" alt="#" class="img-responsive">
+                        <img src="{{popularDeal.dealImage}}" alt="#" class="img-responsive">
                     </a>
                     <span class="bought">
                       <i class="ti-tag">
                       </i>
-                      {{popularDeal.bought}}
+                      {{popularDeal.dealBought}}
                     </span>
                   </div>
                   <!-- /.image -->
                   <div class="title">
                     <a href="#" target="_blank" title="ATLETIKA 3 menesu abonements">
-                      {{popularDeal.header}}
+                      {{popularDeal.dealContent}}
                     </a>
                   </div>
                   <div class="entry-content">
                     <div class="prices clearfix">
-                      <div class="procent" ng-bind="popularDeal.procent">
+                      <div class="procent" ng-bind="popularDeal.dealDiscount">
                         
                       </div>
                       <div class="price">
                         <i class="ti-money">
                         </i>
                         
-                        <b ng-bind="popularDeal.price">
+                        <b ng-bind="popularDeal.dealPrice">
                           
                         </b>
                       </div>
@@ -456,11 +456,11 @@
                         <span>
                           <i class="ti-money">
                           </i>
-                          {{popularDeal.oldPrice}}
+                          {{popularDeal.dealValue}}
                         </span>
                       </div>
                     </div>
-                    <p ng-bind="popularDeal.desc">
+                    <p ng-bind="popularDeal.dealShortEntry">
                       
                     </p>
                   </div>

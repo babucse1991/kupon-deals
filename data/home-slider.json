@@ -1,8 +1,10 @@
 [
 			{
+				"_id"			:	null,
+				"type":"popularDeal",
 				"dealShortEntry" : "Kingscliff: From $349 for a 3-Night Romantic Stay with Bottle of Wine, Chocolates and Return Flights at Santai Retreat",
 				"dealColorClass"	:	"bg-orange",
-				"dealContent"	:"Cana Resort Casino Sirenis Punta Test",
+				"dealContent"	:"Cana Resort Casino Sirenis Punta Test 00001",
 				"dealSubContent"	: "Kingscliff: From $349 for a 3-Night Romantic Stay with Bottle of Wine...",
 				"dealPrice"	: "$401",
 				"dealValue"	:	"$1,422",
@@ -15,13 +17,16 @@
 				"dealBought"	:	"169",
 				"dealShar"	:	"150",
 				"dealTweet"	:	"62",
+				"dealReating":	4,
 				"dealImage"	:	"http://placehold.it/900x600"
 				
 			},
 			{
+				"_id"			:	null,
+				"type":"popularDeal",
 				"dealShortEntry" : "Kingscliff: From $349 for a 3-Night Romantic Stay with Bottle of Wine... ",
 				"dealColorClass"	:	"bg-blue",
-				"dealContent"	:"Sirenis Punta Cana Resort Casino",
+				"dealContent"	:"Sirenis Punta Cana Resort Casino 00002",
 				"dealSubContent"	: "Kingscliff: From $349 for a 3-Night Romantic Stay with Bottle of Wine...",
 				"dealPrice"	: "$999",
 				"dealValue"	:	"$2,475",
@@ -34,13 +39,16 @@
 				"dealBought"	:	"169",
 				"dealShar"	:	"150",
 				"dealTweet"	:	"62",
+				"dealReating":	2,
 				"dealImage"	:	"http://placehold.it/900x600"
 				
 			},
 			{
+				"_id"			:	null,
+				"type":"popularDeal",
 				"dealShortEntry" : "Kingscliff: From $349 for a 3-Night Romantic Stay with Bottle of Wine, Chocolates and Return Flights at Santai Retreat",
 				"dealColorClass"	:	"bg-green",
-				"dealContent"	:"Sirenis Punta Cana Resort Casino",
+				"dealContent"	:"Sirenis Punta Cana Resort Casino 00003",
 				"dealSubContent"	: "Kingscliff: From $349 for a 3-Night Romantic Stay with Bottle of Wine...",
 				"dealPrice"	: "$471",
 				"dealValue"	:	"$1,422",
@@ -53,6 +61,7 @@
 				"dealBought"	:	"169",
 				"dealShar"	:	"150",
 				"dealTweet"	:	"62",
+				"dealReating":	1,
 				"dealImage"	:	"http://placehold.it/900x600"
 				
 			}

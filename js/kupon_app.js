@@ -2,11 +2,12 @@ var KuponApp = angular.module('KuponApp',['ui.bootstrap','ngRoute']);
 
 KuponApp.constant('kupGlobalConstants', {
 	'ACTIVE_FLAG_YES'	:	'Y',
-	'ACTIVE_FLAG_NO'	:	'N',
+	'ACTIVE_FLAG_NO'	:	'N'
 });
 
 KuponApp.value("kuponDynamConst", {
-	volUserIdentity:'',
+	url	:	'http://localhost:3000',
+	volUserIdentity:''
 });
 
 KuponApp.controller("kuponMainController", ['$scope',  '$location', '$routeParams', '$filter','$http', '$location','kuponDynamConst','$rootScope',
@@ -25,9 +26,10 @@ KuponApp.controller("kuponMainController", ['$scope',  '$location', '$routeParam
 KuponApp.controller("HomeController", ['$scope',  '$location', '$routeParams', '$filter','$http', '$location','kuponDynamConst','$rootScope',
                                             function ($scope,  $location, $routeParams, $filter,$http, $location, kuponDynamConst,  $rootScope) {
 	
+	
 	/*Home page slider*/
 	$http({
-	    url: 'data/home-slider.json',
+		url: kuponDynamConst.url+'/allKuponDeal',
 	    method	: 'GET',
 	    headers	: {'Content-Type': 'application/json'},
         dataType: 'json'
@@ -40,12 +42,12 @@ KuponApp.controller("HomeController", ['$scope',  '$location', '$routeParams', '
 			alert("Ajax Error: "+ respObj);
 		}
 	}).error(function(respObj) {
-		alert("Error: "+ respObj);
+		alert("Error 1: "+ respObj);
 	});
 	
 	/*Home feature deals*/
 	$http({
-	    url: 'data/home-feature-deals.json',
+	    url: kuponDynamConst.url+'/kuponDealType/featureDeal',
 	    method	: 'GET',
 	    headers	: {'Content-Type': 'application/json'},
         dataType: 'json'
@@ -54,18 +56,20 @@ KuponApp.controller("HomeController", ['$scope',  '$location', '$routeParams', '
 			
 			
 			$scope.featureDealList = respObj;
-			
+			var timer = $interval(function() {
+				readyCall();	
+			}, 10);
 		} else {
 			alert("Ajax Error: "+ respObj);
 		}
 	}).error(function(respObj) {
-		alert("Error: "+ respObj);
+		alert("Error in feature deals : "+ respObj);
 	});
 	
 
 	/*Home home-popular deals*/
 	$http({
-	    url: 'data/home-popular-deals.json',
+	    url: kuponDynamConst.url+'/kuponDealType/popularDeal',
 	    method	: 'GET',
 	    headers	: {'Content-Type': 'application/json'},
         dataType: 'json'
@@ -79,7 +83,26 @@ KuponApp.controller("HomeController", ['$scope',  '$location', '$routeParams', '
 			alert("Ajax Error: "+ respObj);
 		}
 	}).error(function(respObj) {
-		alert("Error: "+ respObj);
+		alert("Error popular deals: "+ respObj);
+	});
+
+	/*Home last minut deals*/
+	$http({
+	    url: kuponDynamConst.url+'/kuponDealType/latestDeal',
+	    method	: 'GET',
+	    headers	: {'Content-Type': 'application/json'},
+        dataType: 'json'
+	}).success(function(respObj) {
+		if (!angular.isUndefined(respObj)) {
+			
+			
+			$scope.lastMinutDealList = respObj;
+			
+		} else {
+			alert("Ajax Error: "+ respObj);
+		}
+	}).error(function(respObj) {
+		alert("Error minut deals: "+ respObj);
 	});
 	
 	
@@ -99,7 +122,7 @@ KuponApp.controller("HomeController", ['$scope',  '$location', '$routeParams', '
 			alert("Ajax Error: "+ respObj);
 		}
 	}).error(function(respObj) {
-		alert("Error: "+ respObj);
+		alert("Error Best price deals: "+ respObj);
 	});
 	
 	
@@ -119,7 +142,7 @@ KuponApp.controller("HomeController", ['$scope',  '$location', '$routeParams', '
 			alert("Ajax Error: "+ respObj);
 		}
 	}).error(function(respObj) {
-		alert("Error: "+ respObj);
+		alert("Error latest deals: "+ respObj);
 	});	
 	
 	
@@ -134,12 +157,14 @@ KuponApp.controller("HomeController", ['$scope',  '$location', '$routeParams', '
 			
 			
 			$scope.popularTagList = respObj;
-			readyCall();
+			var timer = $interval(function() {
+				readyCall();	
+			}, 10);
 		} else {
 			alert("Ajax Error: "+ respObj);
 		}
 	}).error(function(respObj) {
-		alert("Error: "+ respObj);
+		alert("Error Popular tags: "+ respObj);
 	});
 	
 	
@@ -151,9 +176,10 @@ KuponApp.controller("HomeController", ['$scope',  '$location', '$routeParams', '
 KuponApp.controller("Home2Controller", ['$scope',  '$location', '$routeParams', '$filter','$http', '$location','kuponDynamConst','$rootScope',
                                        function ($scope,  $location, $routeParams, $filter,$http, $location, kuponDynamConst,  $rootScope) {
 
+	
 	/*Home page slider*/
 	$http({
-	    url: 'data/home-slider.json',
+	    url: kuponDynamConst.url+'/allKuponDeal',
 	    method	: 'GET',
 	    headers	: {'Content-Type': 'application/json'},
         dataType: 'json'
@@ -162,16 +188,17 @@ KuponApp.controller("Home2Controller", ['$scope',  '$location', '$routeParams', 
 			
 			$scope.sliderList = respObj;
 			
+			
 		} else {
 			alert("Ajax Error: "+ respObj);
 		}
 	}).error(function(respObj) {
-		alert("Error: "+ respObj);
+		alert("Error page slider: "+ respObj);
 	});
 	
 	/*Home home-popular deals*/
 	$http({
-	   url: 'data/home2-popular-deals.json',
+	   url: kuponDynamConst.url+'/kuponDealType/popularDeal',
 	   method	: 'GET',
 	   headers	: {'Content-Type': 'application/json'},
 	   dataType: 'json'
@@ -180,7 +207,9 @@ KuponApp.controller("Home2Controller", ['$scope',  '$location', '$routeParams', 
 			
 			
 			$scope.popularDealList = respObj;
-			
+			var timer = $interval(function() {
+				readyCall();	
+			}, 10);
 		} else {
 			alert("Ajax Error: "+ respObj);
 		}
@@ -225,7 +254,7 @@ KuponApp.controller("Home2Controller", ['$scope',  '$location', '$routeParams', 
 			alert("Ajax Error: "+ respObj);
 		}
 	}).error(function(respObj) {
-		alert("Error: "+ respObj);
+		alert("Error 11: "+ respObj);
 	});	
 	
 	
@@ -240,12 +269,14 @@ KuponApp.controller("Home2Controller", ['$scope',  '$location', '$routeParams', 
 			
 			
 			$scope.popularTagList = respObj;
-			readyCall();
+			var timer = $interval(function() {
+				readyCall();	
+			}, 10);
 		} else {
 			alert("Ajax Error: "+ respObj);
 		}
 	}).error(function(respObj) {
-		alert("Error: "+ respObj);
+		alert("Error 12: "+ respObj);
 	});
 	
 
@@ -260,7 +291,7 @@ KuponApp.controller("resultController", ['$scope',  '$location', '$routeParams',
 	
 	/*Popular tags*/
 	$http({
-	   url: 'data/search-result.json',
+		url: kuponDynamConst.url+'/allKuponDeal',
 	   method	: 'GET',
 	   headers	: {'Content-Type': 'application/json'},
 	   dataType: 'json'
@@ -349,12 +380,14 @@ KuponApp.controller("resultController", ['$scope',  '$location', '$routeParams',
 			
 			
 			$scope.popularTagList = respObj;
-			readyCall();
+			var timer = $interval(function() {
+				readyCall();	
+			}, 10);
 		} else {
 			alert("Ajax Error: "+ respObj);
 		}
 	}).error(function(respObj) {
-		alert("Error: "+ respObj);
+		alert("Error 17: "+ respObj);
 	});
 	
 }]);
@@ -401,7 +434,7 @@ KuponApp.controller("Details2Controller", ['$scope',  '$location', '$routeParams
                                            function ($scope,  $location, $routeParams, $filter,$http, $location, kuponDynamConst,  $rootScope, $interval) {
     
 	$http({
-	    url: 'data/details2-slider2.json',
+		url: kuponDynamConst.url+'/allKuponDeal',
 	    method	: 'GET',
 	    headers	: {'Content-Type': 'application/json'},
         dataType: 'json'
@@ -427,7 +460,7 @@ KuponApp.controller("DetailsController", ['$scope',  '$location', '$routeParams'
                                                function ($scope,  $location, $routeParams, $filter,$http, $location, kuponDynamConst,  $rootScope, $interval) {
 
         	$http({
-        	    url: 'data/details2-slider2.json',
+        		url: kuponDynamConst.url+'/allKuponDeal',
         	    method	: 'GET',
         	    headers	: {'Content-Type': 'application/json'},
                 dataType: 'json'
