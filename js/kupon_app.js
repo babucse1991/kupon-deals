@@ -23,8 +23,8 @@ KuponApp.controller("kuponMainController", ['$scope',  '$location', '$routeParam
 
 }]);
 
-KuponApp.controller("HomeController", ['$scope',  '$location', '$routeParams', '$filter','$http', '$location','kuponDynamConst','$rootScope',
-                                            function ($scope,  $location, $routeParams, $filter,$http, $location, kuponDynamConst,  $rootScope) {
+KuponApp.controller("HomeController", ['$scope',  '$location', '$routeParams', '$filter','$http', '$location','kuponDynamConst','$rootScope','$interval',
+                                            function ($scope,  $location, $routeParams, $filter,$http, $location, kuponDynamConst,  $rootScope,$interval) {
 	
 	
 	/*Home page slider*/
@@ -173,8 +173,8 @@ KuponApp.controller("HomeController", ['$scope',  '$location', '$routeParams', '
 }]);
 
 
-KuponApp.controller("Home2Controller", ['$scope',  '$location', '$routeParams', '$filter','$http', '$location','kuponDynamConst','$rootScope',
-                                       function ($scope,  $location, $routeParams, $filter,$http, $location, kuponDynamConst,  $rootScope) {
+KuponApp.controller("Home2Controller", ['$scope',  '$location', '$routeParams', '$filter','$http', '$location','kuponDynamConst','$rootScope','$interval',
+                                       function ($scope,  $location, $routeParams, $filter,$http, $location, kuponDynamConst,  $rootScope, $interval) {
 
 	
 	/*Home page slider*/
@@ -286,8 +286,8 @@ KuponApp.controller("Home2Controller", ['$scope',  '$location', '$routeParams', 
 
 
 
-KuponApp.controller("resultController", ['$scope',  '$location', '$routeParams', '$filter','$http', '$location','kuponDynamConst','$rootScope',
-                                   function ($scope,  $location, $routeParams, $filter,$http, $location, kuponDynamConst,  $rootScope) {
+KuponApp.controller("resultController", ['$scope',  '$location', '$routeParams', '$filter','$http', '$location','kuponDynamConst','$rootScope','$interval',
+                                   function ($scope,  $location, $routeParams, $filter,$http, $location, kuponDynamConst,  $rootScope, $interval) {
 	
 	/*Popular tags*/
 	$http({
