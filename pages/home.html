@@ -4,8 +4,8 @@
             <div id="grid-slider" class="flexslider">
               <ul class="slides">
                 <li ng-repeat="slider in sliderList">
-                  <div class="col-sm-7 col-lg-8 omega">
-                      <article class="bg-image entry-lg" data-image-src="{{slider.dealImage}}"  style="background: transparent url('http://placehold.it/900x600') no-repeat scroll center center / cover ;">
+                  <div class="col-sm-7 col-lg-8 omega" ng-init="firstImg=slider.dealImage['0'];">
+                      <article class="bg-image entry-lg" style="background: transparent url({{firstImg}}) no-repeat scroll center center / cover ;">
                       <div class="deal-short-entry" ng-class="slider.dealColorClass">
                         <p ng-bind="slider.dealShortEntry">
                           
@@ -341,7 +341,7 @@
                   </div>
                   <div class="image">
                     <a href="#" target="_blank" title="#">
-                        <img src="{{popularDeal.dealImage}}" alt="#" class="img-responsive">
+                        <img src="{{popularDeal.dealImage['0']}}" alt="#" class="img-responsive">
                     </a>
                     <span class="bought">
                       <i class="ti-tag">
