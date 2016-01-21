@@ -14,7 +14,7 @@ KuponApp.controller("kuponMainController", ['$scope',  '$location', '$routeParam
                                    function ($scope,  $location, $routeParams, $filter,$http, $location, kuponDynamConst,  $rootScope) {
 	$scope.mainheader="pages/default-header.html";
 	$scope.mainfooter="pages/default-footer.html";
-	
+	$scope.imgUrl = kuponDynamConst.url+'/images/';
 	if (angular.isUndefined($location.path()) || $location.path()=='/home' || $location.path()=='/' || $location.path().trim()=='') {
 		$location.path("/home");
 	}
